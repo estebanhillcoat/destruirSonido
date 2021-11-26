@@ -13,13 +13,10 @@ public class detectar : MonoBehaviour
 
     private void OnTriggerEnter(Collider other) {
         
-// si antes se escucho el sonido no hacer nada
-
-
         
 
         AudioSource.PlayClipAtPoint(elAudioDeMario,gameObject.transform.position);
-        //Destroy(gameObject);
+        Destroy(gameObject);
 
     }
     
